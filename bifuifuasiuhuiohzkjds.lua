@@ -1,5 +1,5 @@
 --=====================================
--- Horst DONE Detector (Improved)
+-- Horst DONE Detector (Ngrok Version)
 --=====================================
 
 repeat task.wait() until game:IsLoaded()
@@ -13,7 +13,7 @@ local player = Players.LocalPlayer
 -- CONFIG
 --------------------------------
 
-local SERVER = "https://2d2c8c243b93.ngrok-free.app/"
+local SERVER = "https://2d2c8c243b93.ngrok-free.app/status"
 local DELAY = 5
 local RETRY_DELAY = 10
 local MAX_RETRIES = 3
@@ -191,7 +191,7 @@ end)
 
 task.spawn(function()
 	
-	print("🚀 Horst REAL Link Started")
+	print("🚀 Horst REAL Link Started (Ngrok Version)")
 	print(string.format("📡 Server: %s", SERVER))
 	print(string.format("👤 User: %s", player.Name))
 	print(string.format("⏱ Update interval: %d seconds", DELAY))
@@ -229,4 +229,4 @@ game:GetService("Players").PlayerRemoving:Connect(function(playerWhoLeft)
 	end
 end)
 
-print("✅ Script loaded successfully")
+print("✅ Script loaded successfully (Ngrok Version)")
