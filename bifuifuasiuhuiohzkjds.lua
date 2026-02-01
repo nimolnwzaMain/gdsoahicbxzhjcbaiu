@@ -13,7 +13,7 @@ local player = Players.LocalPlayer
 -- CONFIG
 --------------------------------
 
-local SERVER = "http://192.168.1.37:5000/status"
+local SERVER = "https://2d2c8c243b93.ngrok-free.app/"
 local DELAY = 5
 local RETRY_DELAY = 10
 local MAX_RETRIES = 3
